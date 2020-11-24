@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            iframe {
+                width: calc(50% - 44px);
+                height: 500px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            #jos-logs {
+                margin-bottom: 30px;
+            }
+            pre{
+                white-space: pre-wrap;       /* Since CSS 2.1 */
+                white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+                white-space: -pre-wrap;      /* Opera 4-6 */
+                white-space: -o-pre-wrap;    /* Opera 7 */
+                word-wrap: break-word;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin-left: 20px; margin-bottom: 20px;">
+            <h2>JOS</h2>
+            <div style="height: 300px;">
+                <h4>Event logs</h4>
+                <div style="overflow: scroll; height: calc(100% - 60px); font-family: monospace;
+                    background: black; padding: 10px; color: white; margin-right: 20px; overflow-wrap: break-word;" id="jos-logs"></div>
+            </div>
+        </div>
+        <script src="http://0.0.0.0:3001/jos.js"></script>
+    </body>
+</html>

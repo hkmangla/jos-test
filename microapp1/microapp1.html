@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            pre{
+                white-space: pre-wrap;       /* Since CSS 2.1 */
+                white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+                white-space: -pre-wrap;      /* Opera 4-6 */
+                white-space: -o-pre-wrap;    /* Opera 7 */
+                word-wrap: break-word;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Microapp 1 iframe (Parent: Java)</h2>
+        <button style="position: fixed; right: 10px; top: 20px; cursor: pointer;
+        background: beige; width: 150px; height: 30px;" id="requestButton">Make Request</button>
+        <div style="height: 370px;">
+            <h4>Event logs</h4>
+            <div style="overflow: scroll; height: 100%; font-family: monospace;
+            background: black; padding: 10px; color: white; overflow-wrap: break-word;" id="microapp1-logs"></div>
+        </div>
+        <script src="http://0.0.0.0:3001/microapp1.js"></script>
+    </body>
+</html>
